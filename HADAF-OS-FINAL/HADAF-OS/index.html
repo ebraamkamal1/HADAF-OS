@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1220"><title>HADAF OS — Company Workspace</title>
+<link rel="icon" href="assets/Hadaf icon.jpeg" type="image/png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><div class="brand-mark">H</div><div><b>HADAF</b><small>OPERATING SYSTEM</small></div><button class="icon-btn mobile-close" id="closeNav" aria-label="Close menu">×</button></div>
+    <div class="workspace-label">WORKSPACE <span class="live-dot"></span></div>
+    <nav id="navigation">
+      <button class="nav-item active" data-page="overview"><span>▦</span><span data-i18n="overview">Overview</span></button>
+      <div class="nav-caption" data-i18n="work">WORK</div>
+      <button class="nav-item" data-page="projects"><span>◫</span><span data-i18n="projects">Projects</span><em id="projectCount">0</em></button>
+      <button class="nav-item" data-page="tasks"><span>☷</span><span data-i18n="tasks">Tasks</span><em id="taskCount">0</em></button>
+      <button class="nav-item" data-page="calendar"><span>▦</span><span data-i18n="calendar">Calendar</span></button>
+      <button class="nav-item" data-page="departments"><span>⌘</span><span data-i18n="departments">Departments</span></button>
+      <div class="nav-caption" data-i18n="business">BUSINESS</div>
+      <button class="nav-item" data-page="products"><span>◇</span><span data-i18n="products">Products & Services</span></button>
+      <button class="nav-item" data-page="crm"><span>◎</span><span data-i18n="crm">CRM & Clients</span></button>
+      <button class="nav-item" data-page="marketing"><span>✳</span><span data-i18n="marketing">Marketing</span></button>
+      <button class="nav-item" data-page="finance"><span>＄</span><span data-i18n="finance">Finance</span></button>
+      <div class="nav-caption" data-i18n="resources">RESOURCES</div>
+      <button class="nav-item" data-page="meetings"><span>◷</span><span data-i18n="meetings">Meetings & Decisions</span></button>
+      <button class="nav-item" data-page="documents"><span>▤</span><span data-i18n="documents">Knowledge Base</span></button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="storage-card"><div class="storage-icon">◈</div><div><b data-i18n="localMode">Local workspace</b><small data-i18n="localDesc">Data stays in this browser</small></div><span class="status-pill">LOCAL</span></div>
+      <button class="nav-item" data-page="settings"><span>⚙</span><span data-i18n="settings">Settings</span></button>
+      <div class="profile"><div class="avatar">H</div><div><b>HADAF HQ</b><small data-i18n="workspaceAdmin">Workspace admin</small></div><span class="profile-menu">•••</span></div>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><button class="icon-btn menu-btn" id="menuBtn">☰</button><div class="breadcrumbs"><span>HADAF HQ</span><i>/</i><b id="crumb">Overview</b></div><div class="top-actions"><div class="today" id="today"></div><button class="icon-btn" id="themeBtn" title="Toggle theme">☼</button><button class="lang-btn" id="langBtn">العربية</button><button class="primary-btn small" id="quickAdd">＋ <span data-i18n="quickAdd">Quick add</span></button></div></header>
+    <section class="content" id="content"></section>
+    <footer>HADAF OS <span>•</span> <span data-i18n="localFooter">Private local workspace · Data stored in this browser</span></footer>
+  </main>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<div class="modal-backdrop" id="modalBackdrop"><div class="modal" id="modal"><div class="modal-head"><div><small id="modalEyebrow">CREATE NEW</small><h2 id="modalTitle">New item</h2></div><button class="icon-btn" id="modalClose">×</button></div><form id="itemForm"><div id="formFields" class="form-grid"></div><div class="modal-actions"><button type="button" class="secondary-btn" id="cancelModal">Cancel</button><button class="primary-btn" type="submit" data-i18n="saveItem">Save item</button></div></form></div></div>
+<script src="assets/app.js"></script>
+</body></html>
